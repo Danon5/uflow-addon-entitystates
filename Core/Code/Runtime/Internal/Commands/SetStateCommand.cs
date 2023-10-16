@@ -1,7 +1,7 @@
 ﻿using UFlow.Addon.ECS.Core.Runtime;
 
 namespace UFlow.Addon.EntityStates.Core.Runtime {
-    internal sealed class SetStateCommand<T> : IEntityStateCommand
+    internal sealed class SetStateCommand<T> : IEcsStateCommand
         where T : IEcsComponent, IEcsState {
         private readonly T m_newState;
 

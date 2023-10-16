@@ -17,9 +17,9 @@ namespace UFlow.Addon.EntityStates.Core.Runtime {
 
         private readonly struct BufferedStateCommand {
             public readonly EntityStateMachine stateMachine;
-            public readonly IEntityStateCommand command;
+            public readonly IEcsStateCommand command;
 
-            public BufferedStateCommand(in EntityStateMachine stateMachine, in IEntityStateCommand command) {
+            public BufferedStateCommand(in EntityStateMachine stateMachine, in IEcsStateCommand command) {
                 this.stateMachine = stateMachine;
                 this.command = command;
             }
