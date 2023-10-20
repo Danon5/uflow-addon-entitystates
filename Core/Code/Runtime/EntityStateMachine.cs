@@ -14,6 +14,7 @@ namespace UFlow.Addon.EntityStates.Core.Runtime {
         private Type m_currentStateType;
         
         [field: SerializeReference] internal IEcsState DefaultState { get; private set; }
+        internal Entity Entity => m_entity;
 
         public void Initialize(in Entity entity) {
             m_entity = entity;
